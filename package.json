@@ -2,10 +2,20 @@
   "name": "comments-fe",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "moduleNameMapper": {
+      "^<atoms>/(.*)$": "<rootDir>/src/components/UI/atoms/$1",
+      "^<molecules>/(.*)$": "<rootDir>/src/components/UI/molecules/$1",
+      "^<organisms>/(.*)$": "<rootDir>/src/components/UI/organisms/$1",
+      "^<helpers>/(.*)$": "<rootDir>/src/helpers/$1",
+      "^<styles>/(.*)$": "<rootDir>/src/styles/$1"
+    }
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "jest": "^26.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
